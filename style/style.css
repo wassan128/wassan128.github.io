@@ -1,14 +1,30 @@
 @charset "utf-8";
 
+@keyframes manifest-skuld {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
 @keyframes mjolnir {
 	0% {
 		width: 0px;
+		height: 0px;
+	}
+	25% {
+		width: 40px;
+		height: 0px;
+	}
+	50% {
+		width: 40px;
 		height: 0px;
 	}
 	100% {
 		width: 40px;
 		height: 60px;
 	}
+}
+@keyframes engrave {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
 }
 @keyframes ascente-skuld {
 	0% { top: 0px }
@@ -44,15 +60,14 @@ body {
 		margin: auto;
 		width: 550px;
 		height: 300px;
-		animation: ascente-skuld 2s linear 1s 1 forwards;
 	}
 		#skuld {
+			opacity: 0;
 		}
 		#skuld:before, #skuld:after {
 			content: "";
 			position: absolute;
 			display: inline-block;
-			animation: mjolnir 0.3s linear 0.5s 1 forwards;
 		}
 		#skuld:before {
 			border-left: 1px solid #fff;
@@ -75,7 +90,6 @@ body {
 				border: 5px solid #fff;
 				border-radius: 50%;
 				transition: 0.5s;
-				animation: requiem 128s linear 3s infinite;
 			}
 			#skuld img:hover {
 				background: #005599;
@@ -85,6 +99,7 @@ body {
 				color: #eee;
 				font-size: 25pt;
 				font-family: "Titillium Web";
+				opacity: 0;
 			}
 	#verdandi {
 	}
@@ -94,7 +109,6 @@ body {
 			display: flex;
 			justify-content: center;
 			opacity: 0;
-			animation: manifest-verdandi 1s linear 1.5s 1 forwards;
 		}
 			#verdandi ul li {
 				display: inline-block;
@@ -113,12 +127,32 @@ body {
 					color: #fff;
 					font-size: 18pt;
 					text-align: center;
+					width: 50px;
+					height: 50px;
 					line-height: 50px;
 					border-radius: 50%;
 					background: #fff;
 					color: #003366;
-					width: 50px;
-					height: 50px;
 					transition: 0.5s;
 				}
+
+/* animation */
+#skuld {
+	animation: manifest-skuld 2s linear 0.5s 1 forwards;
+}
+#skuld h2 {
+	animation: engrave 1s linear 1s 1 forwards;
+}
+#skuld:before, #skuld:after {
+	animation: mjolnir 1s linear 2.5s 1 forwards;
+}
+article {
+	animation: ascente-skuld 1s linear 3.5s 1 forwards;
+}
+#verdandi ul {
+	animation: manifest-verdandi 1s linear 3.5s 1 forwards;
+}
+#skuld img {
+	animation: requiem 128s linear 5s infinite;
+}
 
