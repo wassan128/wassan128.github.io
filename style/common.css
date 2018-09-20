@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@keyframes manifest-skuld {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+@keyframes mjolnir {
+	0% {
+		width: 0px;
+		height: 0px;
+	}
+	25% {
+		width: 40px;
+		height: 0px;
+	}
+	50% {
+		width: 40px;
+		height: 0px;
+	}
+	100% {
+		width: 40px;
+		height: 60px;
+	}
+}
+@keyframes engrave {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+@keyframes ascente-skuld {
+	0% { top: 0px }
+	100% { top: -100px }
+}
+@keyframes manifest-verdandi {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+@keyframes requiem {
+	0% { transform: rotate(0deg) }
+	100% {transform: rotate(-360deg) }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 11pt;
+}
+body {
+	background: #003366;
+	margin: 0 auto;
+}

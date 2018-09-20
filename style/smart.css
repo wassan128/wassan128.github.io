@@ -1,48 +1,16 @@
 @charset "utf-8";
 
-html {
-	height: 100%;
-}
-body {
-	height: 100%;
-	overflow: hidden;
-}
 	header {
 		display: none; /*wip*/
 	}
 		header nav {
-			position: absolute;
-			top: 1em;
-			left: 1em;
-			border: 10px solid transparent;
-			cursor: pointer;
-			transition: 0.5s;
 		}
 		header nav:hover {
-			border: 10px solid #005599;
-			border-radius: 50%;
-			background: #005599;
 		}
 			#btn-menu {
-				font-size: 25pt;
-				width: 83px;
-				height: 83px;
-				color: #003366;
-				background: #fff;
-				border-radius: 50%;
-				text-align: center;
-				line-height: 83px;
 			}
 
 	article#eins {
-		display: none; /*wip*/
-		position: absolute;
-		top: -25%;
-		background: #002255;
-		width: 42%;
-		height: 150%;
-		overflow: auto;
-		border-radius: 0 50% 50% 0;
 	}
 		#eins * {
 			color: #fff;
@@ -52,38 +20,20 @@ body {
 		top: 0px;
 		bottom: 0;
 		right: 0;
-		/*left: 42%;*/
 		left: 0;
 		margin: auto;
-		width: 550px;
+		width: 90%;
 		height: 300px;
 	}
 
 		#skuld {
 			opacity: 0;
 		}
-		#skuld:before, #skuld:after {
-			content: "";
-			position: absolute;
-			display: inline-block;
-		}
-		#skuld:before {
-			border-left: 1px solid #fff;
-			border-top: 1px solid #fff;
-			left: 0;
-			top: 0;
-		}
-		#skuld:after {
-			border-right: 1px solid #fff;
-			border-bottom: 1px solid #fff;
-			right: 0;
-			bottom: 0;
-		}
 			#skuld div:first-child {
 				text-align: center;
 			}
 			#skuld img {
-				width: 200px;
+				width: 150px;
 				padding: 20px;
 				border: 5px solid #fff;
 				border-radius: 50%;
@@ -95,7 +45,8 @@ body {
 			#skuld h2 {
 				text-align: center;
 				color: #eee;
-				font-size: 25pt;
+				margin-top: 0.5em;
+				font-size: 20pt;
 				font-family: "Titillium Web";
 				opacity: 0;
 			}
@@ -111,7 +62,7 @@ body {
 			#verdandi ul li {
 				display: inline-block;
 				border: 3px solid transparent;
-				margin: 0 1em;
+				margin: 0 0.5em;
 				padding: 5px;
 				transition: 0.5s;
 				cursor: pointer;
@@ -140,16 +91,13 @@ body {
 #skuld h2 {
 	animation: engrave 1s linear 1s 1 forwards;
 }
-#skuld:before, #skuld:after {
-	animation: mjolnir 1s linear 2.5s 1 forwards;
-}
 #zwei {
-	animation: ascente-skuld 1s linear 3.5s 1 forwards;
+	animation: ascente-skuld 1s linear 2.5s 1 forwards;
 }
 #verdandi ul {
-	animation: manifest-verdandi 1s linear 3.5s 1 forwards;
+	animation: manifest-verdandi 1s linear 2.5s 1 forwards;
 }
 #skuld img {
-	animation: requiem 128s linear 5s infinite;
+	animation: requiem 128s linear 4s infinite;
 }
 
