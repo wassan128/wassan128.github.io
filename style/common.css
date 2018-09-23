@@ -32,7 +32,7 @@
 }
 @keyframes manifest-verdandi {
 	0% { transform: scale(0) }
-	50% { transform: scale(1.2) }
+	50% { transform: scale(1.1) }
 	100% { transform: scale(1) }
 }
 @keyframes requiem {
@@ -47,7 +47,10 @@
 @keyframes manifest-urd-arc {
 	0% { width: 0px; }
 	50% { width: 400px; }
-	75% { width: 320px; }
+	75% { width: 330px; }
+	85% { width: 390px; }
+	90% { width: 345px; }
+	98% { width: 360px; }
 	100% { width: 350px; }
 }
 @keyframes siesta-urd {
