@@ -8,51 +8,95 @@ body {
 	overflow: hidden;
 }
 	header {
-		display: none; /*wip*/
 	}
 		header nav {
 			position: absolute;
 			top: 1em;
 			left: 1em;
-			border: 10px solid transparent;
+			border: 8px solid transparent;
 			cursor: pointer;
 			transition: 0.5s;
+			z-index: 100;
 		}
 		header nav:hover {
-			border: 10px solid #005599;
+			border: 8px solid #005599;
 			border-radius: 50%;
 			background: #005599;
 		}
-			#btn-menu {
+			#btn-menu-open, #btn-menu-close {
 				font-size: 25pt;
 				width: 83px;
 				height: 83px;
 				color: #003366;
-				background: #fff;
+				background: #ddd;
 				border-radius: 50%;
 				text-align: center;
 				line-height: 83px;
 			}
+			#btn-menu-close {
+				display: none;
+			}
 
 	article#eins {
-		display: none; /*wip*/
-		position: absolute;
-		top: -25%;
-		background: #002255;
-		width: 42%;
-		height: 150%;
-		overflow: auto;
-		border-radius: 0 50% 50% 0;
 	}
 		#eins * {
-			color: #fff;
+			color: #ccc;
+		}
+		#eins ul {
+		}
+		#urd {
+			width: 300px;
+			height: 100%;
+			position: absolute;
+			z-index: 50;
+			float: left;
+			margin-top: 120px;
+			opacity: 0;
+		}
+			#urd ul {
+				list-style-type: none;
+				margin: 0;
+				padding-top: 1em;
+				padding-left: 30px;
+			}
+				#urd ul li {
+					border-bottom: 3px dotted #999;
+				}
+					#urd ul li a {
+						padding: 1.5em 0.5em;
+						display: block;
+						font-size: 15pt;
+						text-decoration: none;
+						transition: 1s;
+					}
+						#urd ul li a i {
+							font-size: 15pt;
+							margin-right: 1em;
+							width: 1em;
+							transition: 1s;
+						}
+						#urd ul li a:hover {
+							margin-left: 1em;
+						}
+						#urd ul li a:hover i{
+							transform: rotate(360deg);
+						}
+
+		#urd-arc {
+			width: 0;
+			height: 150%;
+			background: #002255;
+			position: absolute;
+			top: -25%;
+			border-radius: 0 50% 50% 0;
+			box-shadow: 0 0 10px 5px #001144 inset;
+			z-index: 10;
 		}
 	article#zwei {
 		position: absolute;
 		top: 0px;
 		bottom: 0;
 		right: 0;
-		/*left: 42%;*/
 		left: 0;
 		margin: auto;
 		width: 550px;
@@ -68,14 +112,14 @@ body {
 			display: inline-block;
 		}
 		#skuld:before {
-			border-left: 1px solid #fff;
-			border-top: 1px solid #fff;
+			border-left: 1px solid #ddd;
+			border-top: 1px solid #ddd;
 			left: 0;
 			top: 0;
 		}
 		#skuld:after {
-			border-right: 1px solid #fff;
-			border-bottom: 1px solid #fff;
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
 			right: 0;
 			bottom: 0;
 		}
@@ -85,7 +129,7 @@ body {
 			#skuld img {
 				width: 200px;
 				padding: 20px;
-				border: 5px solid #fff;
+				border: 5px solid #ddd;
 				border-radius: 50%;
 				transition: 0.5s;
 			}
@@ -128,7 +172,7 @@ body {
 					height: 60px;
 					line-height: 60px;
 					border-radius: 50%;
-					background: #fff;
+					background: #ddd;
 					color: #003366;
 					transition: 0.5s;
 				}

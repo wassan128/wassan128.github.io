@@ -31,8 +31,6 @@
 	100% { top: -100px }
 }
 @keyframes manifest-verdandi {
-	0% { opacity: 0 }
-	100% { opacity: 1 }
 	0% { transform: scale(0) }
 	50% { transform: scale(1.2) }
 	100% { transform: scale(1) }
@@ -42,11 +40,31 @@
 	100% {transform: rotate(-360deg) }
 }
 
+@keyframes manifest-urd {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+@keyframes manifest-urd-arc {
+	0% { width: 0px; }
+	50% { width: 400px; }
+	75% { width: 320px; }
+	100% { width: 350px; }
+}
+@keyframes siesta-urd {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+@keyframes siesta-urd-arc {
+	0% { width: 350px; }
+	100% { width: 0px; }
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
 	font-size: 11pt;
+	font-family: "Rounded Mplus 1c", "Meiryo UI", "メイリオ";
 }
 body {
 	background: #003366;
@@ -59,13 +77,13 @@ body {
 	#verdandi li .tooltip {
 		visibility: hidden;
 		position: absolute;
-		top: 111%;
-		left: 41px;
+		top: 112%;
+		left: 40px;
 		margin-left: -60px;
 		z-index: 1;
 		width: 100px;
 		color: #fff;
-		background: rgba(0, 0, 0, 0.8);
+		background: #005599;
 		border-radius: 3px;
 		text-align: center;
 		padding: 0.3em;
@@ -84,5 +102,5 @@ body {
 		margin-left: -5px;
 		border-width: 5px;
 		border-style: solid;
-		border-color: transparent transparent black transparent;
-		}
+		border-color: transparent transparent #005599 transparent;
+	}
