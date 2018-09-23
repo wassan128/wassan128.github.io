@@ -33,6 +33,9 @@
 @keyframes manifest-verdandi {
 	0% { opacity: 0 }
 	100% { opacity: 1 }
+	0% { transform: scale(0) }
+	50% { transform: scale(1.2) }
+	100% { transform: scale(1) }
 }
 @keyframes requiem {
 	0% { transform: rotate(0deg) }
@@ -49,3 +52,37 @@ body {
 	background: #003366;
 	margin: 0 auto;
 }
+
+#verdandi li {
+	position: relative;
+}
+	#verdandi li .tooltip {
+		visibility: hidden;
+		position: absolute;
+		top: 111%;
+		left: 41px;
+		margin-left: -60px;
+		z-index: 1;
+		width: 100px;
+		color: #fff;
+		background: rgba(0, 0, 0, 0.8);
+		border-radius: 3px;
+		text-align: center;
+		padding: 0.3em;
+		opacity: 0;
+		transition: 0.5s;
+	}
+	#verdandi li:hover .tooltip {
+		visibility: visible;
+		opacity: 1;
+	}
+	#verdandi li .tooltip::after {
+		content: " ";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent black transparent;
+		}
