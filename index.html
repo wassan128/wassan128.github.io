@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="./style/common.css"/>
 	<link media="only screen and (max-device-width: 470px)" rel="stylesheet" href="./style/smart.css"/>
 	<link media="only screen and (min-device-width: 471px)" rel="stylesheet" href="./style/style.css"/>
+	<link rel="stylesheet" href="./style/style.css"/>
 </head>
 <body>
 	<header>
@@ -27,17 +28,17 @@
 		<section id="urd">
 			<ul>
 				<li>
-					<a href="#">
+					<a href="#" id="btn-zwei" class="btn-ubergang">
 						<i class="fas fa-home"></i>ホーム
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#" id="btn-drei" class="btn-ubergang">
 						<i class="fas fa-user"></i>自分のこと
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="#" id="btn-vier" class="btn-ubergang">
 						<i class="fas fa-laptop"></i>物置き
 					</a>
 				</li>
@@ -45,37 +46,49 @@
 		</section>
 		<div id="urd-arc"></div>
 	</article>
-	<article id="zwei">
-		<section id="skuld">
-			<div>
-				<img src="./img/icon.png" alt="ペンギン"/>
-			</div>
-			<div>
-				<h2>wassan128.github.io</h2>
-			</div>
-		</section>
-		<section id="verdandi">
-			<ul>
-				<li>
-					<a href="https://twitter.com/wassan128" target="_blank">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<span class="tooltip">twitter</span>
-				</li>
-				<li>
-					<a href="https://github.com/wassan128" target="_blank">
-						<i class="fab fa-github"></i>
-					</a>
-					<span class="tooltip">GitHub</span>
-				</li>
-				<li>
-					<a href="https://wassan128.github.io/blog" target="_blank">
-						<i class="fas fa-rss"></i>
-					</a>
-					<span class="tooltip">Blog</span>
-				</li>
-			</ul>
-		</section>
-	</article>
+	<main id="ragnarok">
+		<article id="zwei" class="aktiv">
+			<section id="skuld">
+				<div>
+					<img src="./img/icon.png" alt="ペンギン"/>
+				</div>
+				<div>
+					<h2>wassan128.github.io</h2>
+				</div>
+			</section>
+			<section id="verdandi">
+				<ul>
+					<li>
+						<a href="https://twitter.com/wassan128" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<span class="tooltip">twitter</span>
+					</li>
+					<li>
+						<a href="https://github.com/wassan128" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<span class="tooltip">GitHub</span>
+					</li>
+					<li>
+						<a href="https://wassan128.github.io/blog" target="_blank">
+							<i class="fas fa-rss"></i>
+						</a>
+						<span class="tooltip">Blog</span>
+					</li>
+				</ul>
+			</section>
+		</article>
+		<article id="drei">
+			<section id="vidar">
+				<h3>Coming soon...</h3>
+			</section>
+		</article>
+		<article id="vier">
+			<section id="eir">
+				<h3>Coming soon...</h3>
+			</section>
+		</article>
+	</main>
 </body>
 </html>

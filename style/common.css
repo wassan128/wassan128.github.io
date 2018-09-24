@@ -1,8 +1,14 @@
 @charset "utf-8";
 
 @keyframes manifest-skuld {
-	0% { opacity: 0 }
-	100% { opacity: 1 }
+	0% {
+		opacity: 0;
+		transform: scale(1.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 @keyframes mjolnir {
 	0% {
@@ -59,7 +65,28 @@
 }
 @keyframes siesta-urd-arc {
 	0% { width: 350px; }
+	70% { width: 400px; }
 	100% { width: 0px; }
+}
+@keyframes ubergang-hide {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+@keyframes ubergang-show {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 * {

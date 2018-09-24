@@ -10,7 +10,7 @@ body {
 	header {
 	}
 		header nav {
-			position: absolute;
+			position: fixed;
 			top: 1em;
 			left: 1em;
 			border: 8px solid transparent;
@@ -47,7 +47,7 @@ body {
 		#urd {
 			width: 300px;
 			height: 100%;
-			position: absolute;
+			position: fixed;
 			z-index: 50;
 			float: left;
 			margin-top: 120px;
@@ -86,24 +86,32 @@ body {
 			width: 0;
 			height: 150%;
 			background: #002255;
-			position: absolute;
+			position: fixed;
 			top: -25%;
 			border-radius: 0 50% 50% 0;
 			box-shadow: 0 0 10px 5px #001144 inset;
 			z-index: 10;
 		}
-	article#zwei {
+	#ragnarok, #ragnarok article {
 		position: absolute;
-		top: 0px;
+		top: 0;
 		bottom: 0;
 		right: 0;
 		left: 0;
 		margin: auto;
-		width: 550px;
-		height: 300px;
 		transition: 1s;
 	}
-
+		article section * {
+			color: #ddd;
+		}
+		article section h3 {
+			font-size: 22pt;
+			padding: 0.5em 0;
+		}
+	article#zwei {
+		width: 550px;
+		height: 300px;
+	}
 		#skuld {
 			opacity: 0;
 		}
@@ -144,55 +152,70 @@ body {
 				font-family: "Titillium Web";
 				opacity: 0;
 			}
-	#verdandi {
-	}
-		#verdandi ul {
-			list-style-type: none;
-			margin-top: 25px;
-			display: flex;
-			justify-content: center;
-			transform: scale(0);
+		#verdandi {
 		}
-			#verdandi ul li {
-				display: inline-block;
-				border: 3px solid transparent;
-				margin: 0 1em;
-				padding: 5px;
-				transition: 0.5s;
-				cursor: pointer;
+			#verdandi ul {
+				list-style-type: none;
+				margin-top: 25px;
+				display: flex;
+				justify-content: center;
+				transform: scale(0);
 			}
-			#verdandi ul li:hover {
-				border: 3px solid #005599;
-				border-radius: 50%;
-				background: #005599;
-			}
-				#verdandi ul li i {
-					font-size: 20pt;
-					text-align: center;
-					width: 60px;
-					height: 60px;
-					line-height: 60px;
-					border-radius: 50%;
-					background: #ddd;
-					color: #003366;
+				#verdandi ul li {
+					display: inline-block;
+					border: 3px solid transparent;
+					margin: 0 1em;
+					padding: 5px;
 					transition: 0.5s;
+					cursor: pointer;
 				}
+				#verdandi ul li:hover {
+					border: 3px solid #005599;
+					border-radius: 50%;
+					background: #005599;
+				}
+					#verdandi ul li i {
+						font-size: 20pt;
+						text-align: center;
+						width: 60px;
+						height: 60px;
+						line-height: 60px;
+						border-radius: 50%;
+						background: #ddd;
+						color: #003366;
+						transition: 0.5s;
+					}
+
+	article#drei {
+		width: 800px;
+		height: 80%;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	article#vier {
+		width: 800px;
+		height: 80%;
+		opacity: 0;
+		transform: scale(0);
+	}
+
 
 /* animation */
 #skuld {
-	animation: manifest-skuld 2s linear 0.5s 1 forwards;
+	animation: manifest-skuld 1s ease 0.5s 1 forwards;
 }
 #skuld h2 {
-	animation: engrave 1s linear 1s 1 forwards;
+	animation: engrave 1s linear 0.5s 1 forwards;
 }
 #skuld:before, #skuld:after {
-	animation: mjolnir 1s linear 2.5s 1 forwards;
+	animation: mjolnir 1s linear 1.5s 1 forwards;
 }
 #zwei {
 	animation: ascente-skuld 1s linear 3.5s 1 forwards;
 }
 #verdandi ul {
-	animation: manifest-verdandi 1s ease 4.5s 1 forwards;
+	animation: manifest-verdandi 1s ease 5s 1 forwards;
 }
 #skuld img {
 	animation: requiem 128s linear 5s infinite;
