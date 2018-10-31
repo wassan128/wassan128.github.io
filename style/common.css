@@ -34,7 +34,7 @@
 }
 @keyframes ascente-skuld {
 	0% { top: 0px }
-	100% { top: -100px }
+	100% { top: -50px }
 }
 @keyframes manifest-verdandi {
 	0% { transform: scale(0) }
@@ -96,8 +96,11 @@
 	font-size: 11pt;
 	font-family: "Rounded Mplus 1c", "Meiryo UI", "メイリオ";
 }
+html {
+	background: linear-gradient(0deg, #000, #002, #016);
+	background: #222;
+}
 body {
-	background: #003366;
 	margin: 0 auto;
 }
 
@@ -113,7 +116,7 @@ body {
 		z-index: 1;
 		width: 100px;
 		color: #fff;
-		background: #005599;
+		background: #222;
 		border-radius: 3px;
 		text-align: center;
 		padding: 0.3em;
@@ -132,5 +135,5 @@ body {
 		margin-left: -5px;
 		border-width: 5px;
 		border-style: solid;
-		border-color: transparent transparent #005599 transparent;
+		border-color: transparent transparent #222 transparent;
 	}

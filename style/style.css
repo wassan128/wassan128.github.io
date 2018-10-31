@@ -19,16 +19,16 @@ body {
 			z-index: 100;
 		}
 		header nav:hover {
-			border: 8px solid #005599;
+			border: 8px solid #222;
 			border-radius: 50%;
-			background: #005599;
+			background: #222;
 		}
 			#btn-menu-open, #btn-menu-close {
 				font-size: 25pt;
 				width: 83px;
 				height: 83px;
-				color: #003366;
-				background: #ddd;
+				color: #444;
+				background: #fff;
 				border-radius: 50%;
 				text-align: center;
 				line-height: 83px;
@@ -85,31 +85,39 @@ body {
 		#urd-arc {
 			width: 0;
 			height: 150%;
-			background: #002255;
+			background: #222;
 			position: fixed;
 			top: -25%;
 			border-radius: 0 50% 50% 0;
-			box-shadow: 0 0 10px 5px #001144 inset;
+			box-shadow: 0 0 10px 5px #000 inset;
 			z-index: 10;
 		}
+	#ragnarok {
+		width: 600px;
+		height: 600px;
+		background-image: url("../img/bg/1.jpg");
+		background-size: cover;
+		background-position: center;
+		box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	}
 	#ragnarok, #ragnarok article {
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		right: 0;
 		left: 0;
+		right: 0;
 		margin: auto;
 		transition: 1s;
 	}
 		article section * {
-			color: #ddd;
+			color: #fff;
 		}
 		article section h3 {
 			font-size: 22pt;
 			padding: 0.5em 0;
 		}
 	article#zwei {
-		width: 550px;
+		width: 500px;
 		height: 300px;
 	}
 		#skuld {
@@ -121,14 +129,14 @@ body {
 			display: inline-block;
 		}
 		#skuld:before {
-			border-left: 1px solid #ddd;
-			border-top: 1px solid #ddd;
+			border-left: 1px solid #fff;
+			border-top: 1px solid #fff;
 			left: 0;
 			top: 0;
 		}
 		#skuld:after {
-			border-right: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
+			border-right: 1px solid #fff;
+			border-bottom: 1px solid #fff;
 			right: 0;
 			bottom: 0;
 		}
@@ -136,14 +144,14 @@ body {
 				text-align: center;
 			}
 			#skuld img {
-				width: 200px;
-				padding: 20px;
-				border: 5px solid #ddd;
+				width: 180px;
+				padding: 15px;
+				border: 5px solid #fff;
 				border-radius: 50%;
 				transition: 0.5s;
 			}
 			#skuld img:hover {
-				background: #005599;
+				background: #222;
 			}
 			#skuld h2 {
 				text-align: center;
@@ -170,9 +178,9 @@ body {
 					cursor: pointer;
 				}
 				#verdandi ul li:hover {
-					border: 3px solid #005599;
+					border: 3px solid #222;
 					border-radius: 50%;
-					background: #005599;
+					background: #222;
 				}
 					#verdandi ul li i {
 						font-size: 20pt;
@@ -181,8 +189,8 @@ body {
 						height: 60px;
 						line-height: 60px;
 						border-radius: 50%;
-						background: #ddd;
-						color: #003366;
+						background: #fff;
+						color: #444;
 						transition: 0.5s;
 					}
 

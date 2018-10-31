@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		new_aktiv.setAttribute("class", "aktiv");
 		new_aktiv.style.animation = "ubergang-show 1s ease 0s 1 forwards";
 		if (id_after === "zwei") {
-			new_aktiv.style.top = "-100px";
+			new_aktiv.style.top = "-50px";
 		}
 	};
 	for (const btn_ubergang of btns_ubergang) {
