@@ -97,8 +97,7 @@
 	font-family: "Rounded Mplus 1c", "Meiryo UI", "メイリオ";
 }
 html {
-	background: linear-gradient(0deg, #000, #002, #016);
-	background: #222;
+	background: url("../img/bg/wood_ptn.png");
 }
 body {
 	margin: 0 auto;
