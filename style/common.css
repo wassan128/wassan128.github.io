@@ -115,6 +115,20 @@
 	font-weight: normal;
 	font-size: 11pt;
 	font-family: "Rounded Mplus 1c", "Meiryo UI", "メイリオ";
+	scrollbar-base-color: transparent;
+}
+*::-webkit-scrollbar {
+	width: 5px;
+	height: 10px;
+}
+*::-webkit-scrollbar-track {
+	background: #ccc;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb {
+	background: #444;
+	border-radius: 10px;
 }
 html {
 	background: url("../img/bg/wood_ptn.png");
@@ -338,19 +352,32 @@ body {
 				border-color: transparent transparent #222 transparent;
 			}
 
-	article#drei {
-		width: 800px;
-		height: 80%;
-		opacity: 0;
-		transform: scale(0);
+	article#drei *, article#vier * {
+		color: #ddd;
 	}
 
-	article#vier {
-		width: 800px;
-		height: 80%;
+	article#drei, article#vier {
 		opacity: 0;
 		transform: scale(0);
+		padding: 1em;
+		background: rgba(0, 0, 0, 0.5);
+		overflow: auto;
 	}
+		#drei h3 {
+			font-size: 25pt;
+			font-weight: bold;
+		}
+		#drei ul {
+			list-style-type: none;
+		}
+			#drei ul li {
+				font-size: 12pt;
+			}
+				#drei ul li a {
+					color: #aaa;
+					font-size: 12pt;
+				}
+
 
 /* animation */
 #skuld {
