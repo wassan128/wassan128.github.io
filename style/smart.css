@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-	header {
-	}
-		header nav {
-		}
 		header nav:hover {
 		}
 			#btn-menu {
@@ -66,20 +62,4 @@
 				margin: 0 0.5em;
 			}
 
-/* animation */
-#skuld {
-	animation: manifest-skuld 1s ease 0.5s 1 forwards;
-}
-#skuld h2 {
-	animation: engrave 1s linear 0.5s 1 forwards;
-}
-#zwei {
-	animation: ascente-skuld 1s linear 3.5s 1 forwards;
-}
-#verdandi ul {
-	animation: manifest-verdandi 1s ease 5s 1 forwards;
-}
-#skuld img {
-	animation: requiem 128s linear 5s infinite;
-}
 
