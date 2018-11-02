@@ -205,8 +205,6 @@ body {
 		}
 
 	#ragnarok {
-		width: 600px;
-		height: 600px;
 		background-image: url("../img/bg/1.jpg");
 		background-size: cover;
 		background-position: center;
@@ -284,51 +282,14 @@ body {
 			transform: scale(0);
 		}
 			#verdandi ul li {
+				position: relative;
+				display: inline-block;
 				margin: 0 1em;
+				padding: 5px;
+				border: 3px solid transparent;
+				transition: 0.5s;
 				cursor: pointer;
 			}
-	#verdandi li {
-			position: relative;
-			display: inline-block;
-			border: 3px solid transparent;
-			padding: 5px;
-			transition: 0.5s;
-	}
-	#verdandi ul li:hover {
-			border: 3px solid #222;
-			border-radius: 50%;
-			background: #222;
-	}
-		#verdandi li .tooltip {
-			visibility: hidden;
-			position: absolute;
-			top: 112%;
-			left: 40px;
-			margin-left: -60px;
-			z-index: 1;
-			width: 100px;
-			color: #fff;
-			background: #222;
-			border-radius: 3px;
-			text-align: center;
-			padding: 0.3em;
-			opacity: 0;
-			transition: 0.5s;
-		}
-		#verdandi li:hover .tooltip {
-			visibility: visible;
-			opacity: 1;
-		}
-		#verdandi li .tooltip::after {
-			content: " ";
-			position: absolute;
-			bottom: 100%;
-			left: 50%;
-			margin-left: -5px;
-			border-width: 5px;
-			border-style: solid;
-			border-color: transparent transparent #222 transparent;
-		}
 				#verdandi ul li i {
 					font-size: 20pt;
 					text-align: center;
@@ -340,6 +301,42 @@ body {
 					color: #444;
 					transition: 0.5s;
 				}
+
+			#verdandi ul li:hover {
+				border: 3px solid #222;
+				border-radius: 50%;
+				background: #222;
+			}
+			#verdandi li .tooltip {
+				visibility: hidden;
+				position: absolute;
+				top: 112%;
+				left: 40px;
+				margin-left: -60px;
+				z-index: 1;
+				width: 100px;
+				color: #fff;
+				background: #222;
+				border-radius: 3px;
+				text-align: center;
+				padding: 0.3em;
+				opacity: 0;
+				transition: 0.5s;
+			}
+			#verdandi li:hover .tooltip {
+				visibility: visible;
+				opacity: 1;
+			}
+			#verdandi li .tooltip::after {
+				content: " ";
+				position: absolute;
+				bottom: 100%;
+				left: 50%;
+				margin-left: -5px;
+				border-width: 5px;
+				border-style: solid;
+				border-color: transparent transparent #222 transparent;
+			}
 
 	article#drei {
 		width: 800px;
