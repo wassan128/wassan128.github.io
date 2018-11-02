@@ -149,12 +149,12 @@ body {
 			font-size: 25pt;
 			width: 83px;
 			height: 83px;
+			box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 			color: #444;
 			background: #fff;
 			border-radius: 50%;
 			text-align: center;
 			line-height: 83px;
-			box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
 		}
 		#btn-menu-close {
 			display: none;
@@ -214,7 +214,7 @@ body {
 			position: fixed;
 			top: -25%;
 			border-radius: 0 50% 50% 0;
-			box-shadow: 0 0 10px 5px #000 inset;
+			box-shadow: 0 0 5px 3px #000;
 			z-index: 10;
 		}
 
@@ -303,17 +303,21 @@ body {
 				border: 3px solid transparent;
 				transition: 0.5s;
 				cursor: pointer;
+				box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
 			}
 				#verdandi ul li i {
 					font-size: 20pt;
 					text-align: center;
-					width: 60px;
-					height: 60px;
 					line-height: 60px;
-					border-radius: 50%;
 					background: #fff;
 					color: #444;
 					transition: 0.5s;
+					border-radius: 50%;
+					width: 60px;
+					height: 60px;
 				}
 
 			#verdandi ul li:hover {
@@ -363,12 +367,20 @@ body {
 		background: rgba(0, 0, 0, 0.5);
 		overflow: auto;
 	}
+		#vidar > img {
+			display: block;
+			margin: 0 auto;
+			border-radius: 50%;
+			box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+		}
 		#drei h3 {
 			font-size: 25pt;
 			font-weight: bold;
 		}
 		#drei ul {
 			list-style-type: none;
+			background: rgba(0, 0, 0, 0.3);
+			padding: 0.5em;
 		}
 			#drei ul li {
 				font-size: 12pt;
