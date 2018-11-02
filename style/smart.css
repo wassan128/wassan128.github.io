@@ -63,29 +63,8 @@
 			justify-content: center;
 		}
 			#verdandi ul li {
-				display: inline-block;
-				border: 3px solid transparent;
 				margin: 0 0.5em;
-				padding: 5px;
-				transition: 0.5s;
-				cursor: pointer;
 			}
-			#verdandi ul li:hover {
-				border: 3px solid #005599;
-				border-radius: 50%;
-				background: #005599;
-			}
-				#verdandi ul li i {
-					font-size: 20pt;
-					text-align: center;
-					width: 60px;
-					height: 60px;
-					line-height: 60px;
-					border-radius: 50%;
-					background: #fff;
-					color: #003366;
-					transition: 0.5s;
-				}
 
 /* animation */
 #skuld {

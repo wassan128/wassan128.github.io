@@ -47,8 +47,18 @@
 }
 
 @keyframes manifest-urd {
-	0% { opacity: 0 }
-	100% { opacity: 1 }
+	0% {
+		display: none;
+		opacity: 0;
+	}
+	1% {
+		display: none;
+		opacity: 0;
+	}
+	100% {
+		display: block;
+		opacity: 1;
+	}
 }
 @keyframes manifest-urd-arc {
 	0% { width: 0px; }
@@ -60,8 +70,18 @@
 	100% { width: 350px; }
 }
 @keyframes siesta-urd {
-	0% { opacity: 1; }
-	100% { opacity: 0; }
+	0% {
+		display: block;
+		opacity: 1;
+	}
+	1% {
+		display: none;
+		opacity: 1;
+	}
+	100% {
+		display: none;
+		opacity: 0;
+	}
 }
 @keyframes siesta-urd-arc {
 	0% { width: 350px; }
@@ -105,6 +125,15 @@ body {
 
 #verdandi li {
 	position: relative;
+	display: inline-block;
+	border: 3px solid transparent;
+	padding: 5px;
+	transition: 0.5s;
+}
+#verdandi ul li:hover {
+	border: 3px solid #222;
+	border-radius: 50%;
+	background: #222;
 }
 	#verdandi li .tooltip {
 		visibility: hidden;
@@ -136,3 +165,15 @@ body {
 		border-style: solid;
 		border-color: transparent transparent #222 transparent;
 	}
+			#verdandi ul li i {
+				font-size: 20pt;
+				text-align: center;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				border-radius: 50%;
+				background: #fff;
+				color: #444;
+				transition: 0.5s;
+			}
+

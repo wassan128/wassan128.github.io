@@ -11,8 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	const fn_btn_menu_open = (e) => {
 		btn_menu_open.style.display = "none";
 		btn_menu_close.style.display = "block";
+
+		urd.style.display = "block";
+
 		urd_arc.style.animation = "manifest-urd-arc 1s ease 0s 1 forwards";
 		urd.style.animation = "manifest-urd 0.4s ease 0.5s 1 forwards";
+
 		ragnarok.style.left = "350px";
 	};
 	btn_menu_open.addEventListener("click", fn_btn_menu_open, false);
@@ -20,8 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	const fn_btn_menu_close = (e) => {
 		btn_menu_open.style.display = "block";
 		btn_menu_close.style.display = "none";
+
 		urd.style.animation = "siesta-urd 0.2s ease 0s 1 forwards";
 		urd_arc.style.animation = "siesta-urd-arc 0.5s ease 0s 1 forwards";
+
+		urd.style.display = "none";
+
 		ragnarok.style.left = "0px";
 	};
 	btn_menu_close.addEventListener("click", fn_btn_menu_close, false);
