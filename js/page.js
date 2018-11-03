@@ -18,11 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	(async () => {
 		const imgs = [...Array(MAX_IMAGE_NO).keys()].map(no => `./img/bg/${++no}.jpg`);
 		await load_assets(imgs);
-		setInterval(() => {
+
+		const change_bg = () =>{
 			const ragnarok = document.getElementById("ragnarok");
 			const img_no = Math.floor(Math.random() * MAX_IMAGE_NO) + 1;
 			ragnarok.style.backgroundImage = `url("./img/bg/${img_no}.jpg")`;
-		}, BG_INTERVAL);
+		};
+		change_bg();
+		setInterval(change_bg, BG_INTERVAL);
 	})();
 
 	/* control menu */

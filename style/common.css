@@ -379,16 +379,22 @@ body {
 		}
 		#drei ul {
 			list-style-type: none;
-			background: rgba(0, 0, 0, 0.3);
+			background: rgba(0, 0, 0, 0.5);
 			padding: 0.5em;
 		}
 			#drei ul li {
 				font-size: 12pt;
+				line-height: 2em;
 			}
 				#drei ul li a {
-					color: #aaa;
 					font-size: 12pt;
 				}
+				#drei ul li a:hover {
+					color: #aaa;
+				}
+					#drei ul li a i {
+						margin-right: 0.5em;
+					}
 
 
 /* animation */
