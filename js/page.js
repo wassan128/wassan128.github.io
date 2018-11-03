@@ -1,15 +1,30 @@
 "use strict";
 
 const MAX_IMAGE_NO = 6;
-const BG_INTERVAL = 60000;
+const BG_INTERVAL = 30000;
 document.addEventListener("DOMContentLoaded", () => {
+	const load_assets = (imgs) => {
+		return Promise.all(imgs.map(e => {
+			new Promise(
+				(resolve, reject) => Object.assign(new Image, {
+					src: e,
+					onload: resolve,
+					onerror: reject
+				})
+			)}
+		));
+	};
+
 	(async () => {
+		const imgs = [...Array(MAX_IMAGE_NO).keys()].map(no => `./img/bg/${++no}.jpg`);
+		await load_assets(imgs);
 		setInterval(() => {
 			const ragnarok = document.getElementById("ragnarok");
 			const img_no = Math.floor(Math.random() * MAX_IMAGE_NO) + 1;
 			ragnarok.style.backgroundImage = `url("./img/bg/${img_no}.jpg")`;
-		}, BG_INTERVAL)
+		}, BG_INTERVAL);
 	})();
+
 	/* control menu */
 	const btn_menu_open = document.getElementById("btn-menu-open");
 	const btn_menu_close = document.getElementById("btn-menu-close");
