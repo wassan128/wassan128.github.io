@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	(async () => {
 		const imgs = [...Array(MAX_IMAGE_NO).keys()].map(no => `./img/bg/${++no}.jpg`);
+		imgs.push("./img/bg/wood_ptn.png");
 		await load_assets(imgs);
 
 		const change_bg = () =>{
