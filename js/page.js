@@ -1,6 +1,15 @@
 "use strict";
 
+const MAX_IMAGE_NO = 6;
+const BG_INTERVAL = 60000;
 document.addEventListener("DOMContentLoaded", () => {
+	(async () => {
+		setInterval(() => {
+			const ragnarok = document.getElementById("ragnarok");
+			const img_no = Math.floor(Math.random() * MAX_IMAGE_NO) + 1;
+			ragnarok.style.backgroundImage = `url("./img/bg/${img_no}.jpg")`;
+		}, BG_INTERVAL)
+	})();
 	/* control menu */
 	const btn_menu_open = document.getElementById("btn-menu-open");
 	const btn_menu_close = document.getElementById("btn-menu-close");
