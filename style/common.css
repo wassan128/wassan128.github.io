@@ -219,6 +219,7 @@ body {
 		}
 
 	#ragnarok {
+		background-color: #222;
 		background-image: url("../img/bg/1.jpg");
 		background-size: cover;
 		background-position: center;
@@ -366,6 +367,7 @@ body {
 		padding: 1em;
 		background: rgba(0, 0, 0, 0.5);
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 	}
 		#vidar > img {
 			display: block;
@@ -373,7 +375,7 @@ body {
 			border-radius: 50%;
 			box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
 		}
-		#drei h3 {
+		#drei h3, #vier h3 {
 			font-size: 25pt;
 			font-weight: bold;
 		}
@@ -394,6 +396,46 @@ body {
 				}
 					#drei ul li a i {
 						margin-right: 0.5em;
+					}
+
+		#vier ul {
+			list-style-type: none;
+			display: flex;
+			justify-content: space-around;
+			align-items: stretch;
+			flex-wrap: wrap;
+			text-align: center;
+		}
+			#vier ul li {
+				background: #222;
+				margin: 1em;
+				width: 250px;
+				box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+			}
+				#vier ul li div:first-child {
+					width: 100%;
+					height: 120px;
+					background: #333;
+					position: relative;
+				}
+					#vier ul li div:first-child img {
+						max-height: 100px;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translateY(-50%) translateX(-50%);
+						-webkit-transform: translateY(-50%) translateX(-50%);
+					}
+				#vier ul li div:nth-child(2) {
+					width: 100%;
+				}
+					#vier ul li h3 {
+						font-size: 13pt;
+						font-weight: bold;
+						border-bottom: 1px dashed #444;
+					}
+					#vier ul li p {
+						padding: 1em;
 					}
 
 
