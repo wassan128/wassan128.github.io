@@ -1,212 +1,212 @@
 @charset "utf-8";
 
 html {
-	height: 100%;
+    height: 100%;
 }
 body {
-	height: 100%;
-	overflow: hidden;
+    height: 100%;
+    overflow: hidden;
 }
-	header {
-	}
-		header nav {
-			position: fixed;
-			top: 1em;
-			left: 1em;
-			border: 8px solid transparent;
-			cursor: pointer;
-			transition: 0.5s;
-			z-index: 100;
-		}
-		header nav:hover {
-			border: 8px solid #005599;
-			border-radius: 50%;
-			background: #005599;
-		}
-			#btn-menu-open, #btn-menu-close {
-				font-size: 25pt;
-				width: 83px;
-				height: 83px;
-				color: #003366;
-				background: #ddd;
-				border-radius: 50%;
-				text-align: center;
-				line-height: 83px;
-			}
-			#btn-menu-close {
-				display: none;
-			}
+    header {
+    }
+        header nav {
+            position: fixed;
+            top: 1em;
+            left: 1em;
+            border: 8px solid transparent;
+            cursor: pointer;
+            transition: 0.5s;
+            z-index: 100;
+        }
+        header nav:hover {
+            border: 8px solid #005599;
+            border-radius: 50%;
+            background: #005599;
+        }
+            #btn-menu-open, #btn-menu-close {
+                font-size: 25pt;
+                width: 83px;
+                height: 83px;
+                color: #003366;
+                background: #ddd;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 83px;
+            }
+            #btn-menu-close {
+                display: none;
+            }
 
-	article#eins {
-		display: none;
-	}
-		#eins * {
-			color: #ccc;
-		}
-		#eins ul {
-		}
-		#urd {
-			width: 100%;
-			height: 100%;
-			z-index: 50;
-			opacity: 0;
-			background: #002255;
-		}
-			#urd ul {
-				list-style-type: none;
-				margin: 0;
-				padding-top: 1em;
-				padding-left: 30px;
-			}
-				#urd ul li {
-					border-bottom: 3px dotted #999;
-				}
-					#urd ul li a {
-						padding: 1.5em 0.5em;
-						display: block;
-						font-size: 15pt;
-						text-decoration: none;
-						transition: 1s;
-					}
-						#urd ul li a i {
-							font-size: 15pt;
-							margin-right: 1em;
-							width: 1em;
-							transition: 1s;
-						}
-						#urd ul li a:hover {
-							margin-left: 1em;
-						}
-						#urd ul li a:hover i{
-							transform: rotate(360deg);
-						}
+    article#eins {
+        display: none;
+    }
+        #eins * {
+            color: #ccc;
+        }
+        #eins ul {
+        }
+        #urd {
+            width: 100%;
+            height: 100%;
+            z-index: 50;
+            opacity: 0;
+            background: #002255;
+        }
+            #urd ul {
+                list-style-type: none;
+                margin: 0;
+                padding-top: 1em;
+                padding-left: 30px;
+            }
+                #urd ul li {
+                    border-bottom: 3px dotted #999;
+                }
+                    #urd ul li a {
+                        padding: 1.5em 0.5em;
+                        display: block;
+                        font-size: 15pt;
+                        text-decoration: none;
+                        transition: 1s;
+                    }
+                        #urd ul li a i {
+                            font-size: 15pt;
+                            margin-right: 1em;
+                            width: 1em;
+                            transition: 1s;
+                        }
+                        #urd ul li a:hover {
+                            margin-left: 1em;
+                        }
+                        #urd ul li a:hover i{
+                            transform: rotate(360deg);
+                        }
 
-	#ragnarok, #ragnarok article {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		left: 0;
-		margin: auto;
-		transition: 1s;
-	}
-		article section * {
-			color: #ddd;
-		}
-		article section h3 {
-			font-size: 22pt;
-			padding: 0.5em 0;
-		}
-	article#zwei {
-		width: 550px;
-		height: 300px;
-	}
-		#skuld {
-			opacity: 0;
-		}
-		#skuld:before, #skuld:after {
-			content: "";
-			position: absolute;
-			display: inline-block;
-		}
-		#skuld:before {
-			border-left: 1px solid #ddd;
-			border-top: 1px solid #ddd;
-			left: 0;
-			top: 0;
-		}
-		#skuld:after {
-			border-right: 1px solid #ddd;
-			border-bottom: 1px solid #ddd;
-			right: 0;
-			bottom: 0;
-		}
-			#skuld div:first-child {
-				text-align: center;
-			}
-			#skuld img {
-				width: 200px;
-				padding: 20px;
-				border: 5px solid #ddd;
-				border-radius: 50%;
-				transition: 0.5s;
-			}
-			#skuld img:hover {
-				background: #005599;
-			}
-			#skuld h2 {
-				text-align: center;
-				color: #eee;
-				font-size: 25pt;
-				font-family: "Titillium Web";
-				opacity: 0;
-			}
-		#verdandi {
-		}
-			#verdandi ul {
-				list-style-type: none;
-				margin-top: 25px;
-				display: flex;
-				justify-content: center;
-				transform: scale(0);
-			}
-				#verdandi ul li {
-					display: inline-block;
-					border: 3px solid transparent;
-					margin: 0 1em;
-					padding: 5px;
-					transition: 0.5s;
-					cursor: pointer;
-				}
-				#verdandi ul li:hover {
-					border: 3px solid #005599;
-					border-radius: 50%;
-					background: #005599;
-				}
-					#verdandi ul li i {
-						font-size: 20pt;
-						text-align: center;
-						width: 60px;
-						height: 60px;
-						line-height: 60px;
-						border-radius: 50%;
-						background: #ddd;
-						color: #003366;
-						transition: 0.5s;
-					}
+    #ragnarok, #ragnarok article {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transition: 1s;
+    }
+        article section * {
+            color: #ddd;
+        }
+        article section h3 {
+            font-size: 22pt;
+            padding: 0.5em 0;
+        }
+    article#zwei {
+        width: 550px;
+        height: 300px;
+    }
+        #skuld {
+            opacity: 0;
+        }
+        #skuld:before, #skuld:after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+        }
+        #skuld:before {
+            border-left: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+            left: 0;
+            top: 0;
+        }
+        #skuld:after {
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            right: 0;
+            bottom: 0;
+        }
+            #skuld div:first-child {
+                text-align: center;
+            }
+            #skuld img {
+                width: 200px;
+                padding: 20px;
+                border: 5px solid #ddd;
+                border-radius: 50%;
+                transition: 0.5s;
+            }
+            #skuld img:hover {
+                background: #005599;
+            }
+            #skuld h2 {
+                text-align: center;
+                color: #eee;
+                font-size: 25pt;
+                font-family: "Titillium Web";
+                opacity: 0;
+            }
+        #verdandi {
+        }
+            #verdandi ul {
+                list-style-type: none;
+                margin-top: 25px;
+                display: flex;
+                justify-content: center;
+                transform: scale(0);
+            }
+                #verdandi ul li {
+                    display: inline-block;
+                    border: 3px solid transparent;
+                    margin: 0 1em;
+                    padding: 5px;
+                    transition: 0.5s;
+                    cursor: pointer;
+                }
+                #verdandi ul li:hover {
+                    border: 3px solid #005599;
+                    border-radius: 50%;
+                    background: #005599;
+                }
+                    #verdandi ul li i {
+                        font-size: 20pt;
+                        text-align: center;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                        border-radius: 50%;
+                        background: #ddd;
+                        color: #003366;
+                        transition: 0.5s;
+                    }
 
-	article#drei {
-		width: 800px;
-		height: 80%;
-		opacity: 0;
-		transform: scale(0);
-	}
+    article#drei {
+        width: 800px;
+        height: 80%;
+        opacity: 0;
+        transform: scale(0);
+    }
 
-	article#vier {
-		width: 800px;
-		height: 80%;
-		opacity: 0;
-		transform: scale(0);
-	}
+    article#vier {
+        width: 800px;
+        height: 80%;
+        opacity: 0;
+        transform: scale(0);
+    }
 
 
 /* animation */
 #skuld {
-	animation: manifest-skuld 1s ease 0.5s 1 forwards;
+    animation: manifest-skuld 1s ease 0.5s 1 forwards;
 }
 #skuld h2 {
-	animation: engrave 1s linear 0.5s 1 forwards;
+    animation: engrave 1s linear 0.5s 1 forwards;
 }
 #skuld:before, #skuld:after {
-	animation: mjolnir 1s linear 1.5s 1 forwards;
+    animation: mjolnir 1s linear 1.5s 1 forwards;
 }
 #zwei {
-	animation: ascente-skuld 1s linear 3.5s 1 forwards;
+    animation: ascente-skuld 1s linear 3.5s 1 forwards;
 }
 #verdandi ul {
-	animation: manifest-verdandi 1s ease 5s 1 forwards;
+    animation: manifest-verdandi 1s ease 5s 1 forwards;
 }
 #skuld img {
-	animation: requiem 128s linear 5s infinite;
+    animation: requiem 128s linear 5s infinite;
 }
 
