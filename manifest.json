@@ -1,0 +1,17 @@
+{
+    "name": "wassan128.github.io",
+    "short_name": "wassan128",
+    "description": "Profile for wassan128",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#000",
+    "theme_color": "#fff",
+    "icons": [
+        {
+            "src": "/img/icon_mini.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}

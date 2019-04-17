@@ -7,6 +7,11 @@
     <meta name="Keywords"  content="iOS,safari,iphone,ipad" />
     <title>wassan128</title>
     <script src="js/page.js"></script>
+    <script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service_worker.js");
+    }
+    </script>
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet">
@@ -15,6 +20,7 @@
     <link rel="stylesheet" href="./style/common.css"/>
     <link media="only screen and (max-device-width: 600px)" rel="stylesheet" href="./style/smart.css">
     <link media="only screen and (min-device-width: 601px)" rel="stylesheet" href="./style/style.css">
+    <link rel="manifest" href="./manifest.json">
 </head>
 <body>
     <header>
