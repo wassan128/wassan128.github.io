@@ -131,7 +131,8 @@
     border-radius: 10px;
 }
 html {
-    background: url("../img/bg/wood_ptn.png");
+    background-image: url("../img/bg/wood_ptn.png");
+    background-color: #000;
 }
 body {
     margin: 0 auto;
