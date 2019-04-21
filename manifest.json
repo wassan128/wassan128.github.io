@@ -1,7 +1,7 @@
 {
     "name": "wassan128.github.io",
     "short_name": "wassan128",
-    "description": "Profile for wassan128",
+    "description": "Profile of wassan128",
     "start_url": "/",
     "display": "standalone",
     "orientation": "any",
@@ -9,9 +9,17 @@
     "theme_color": "#fff",
     "icons": [
         {
-            "src": "/img/icon_mini.png",
+            "src": "./img/icon_256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }, {
+            "src": "./img/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }, {
+            "src": "./img/icon_mini.png",
             "sizes": "128x128",
             "type": "image/png"
         }
-    ]
+    ]]
 }
