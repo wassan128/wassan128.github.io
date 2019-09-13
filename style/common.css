@@ -225,6 +225,7 @@ body {
         background-size: cover;
         background-position: center;
         box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+        transition: 1s;
     }
     #ragnarok, #ragnarok article {
         position: absolute;
@@ -233,7 +234,6 @@ body {
         left: 0;
         right: 0;
         margin: auto;
-        transition: 1s;
     }
         article section * {
             color: #fff;
